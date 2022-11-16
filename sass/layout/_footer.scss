@@ -1,0 +1,140 @@
+.footer-position {
+  display: flex;
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.foot-contact {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.6);
+  transition-duration: 250ms;
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.container-footer-logo {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.foot-box {
+  display: flex;
+  align-items: baseline;
+}
+
+.social-foot__list {
+  display: flex;
+  gap: 10px;
+  padding-left: 0;
+}
+.social-foot__link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--main-bcg-color);
+  background-color: rgba(255, 255, 255, 10%);
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus,
+  &:hover {
+    background-color: #2196f3;
+    color: var(--main-bcg-color);
+    .social-foot__svg {
+      fill: #ffffff;
+    }
+  }
+}
+.social-foot__svg {
+  height: 20px;
+  width: 20px;
+  fill: currentColor;
+}
+.footer-item {
+  margin-bottom: 9px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.adress {
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--main-bcg-color);
+}
+
+.social-network-box {
+  margin-left: 70px;
+}
+
+.last-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.mailing-list {
+  margin-left: auto;
+}
+.mailing-list > form {
+  display: flex;
+}
+
+.mailing-input {
+  width: 358px;
+  height: 50px;
+  background: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  padding-left: 16px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  outline: transparent;
+  transition-property: border-color;
+  &:focus {
+    border-color: #2196f3;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+  }
+  &::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.mailing-form {
+  position: relative;
+}
+
+.mailing-icon {
+  fill: #ffffff;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 0;
+  top: 13px;
+  right: 28px;
+}
+
+.hov:focus,
+.hov:hover {
+  color: var(--blue-color);
+}
