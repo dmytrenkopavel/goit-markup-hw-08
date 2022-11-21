@@ -28,7 +28,7 @@
           </ul>
         </nav>
         <div class="header-connect">
-          <ul class="list header-list">
+          <ul class="list header-list tab-list">
             <li>
               <a href="mailto:info@devstudio.com" class="link tel hov"
                 ><svg class="svg-mail">
@@ -44,6 +44,37 @@
                 >+38096111111</a
               >
             </li>
+          </ul>
+        </div>
+        <button type="button" class="menu-open" data-menu-open>
+          <svg>
+            <use href="./img/symbol-defs.svg#menu" width="40"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu is-hidden" data-menu>
+        <button type="button" class="menu-close" data-menu-close>
+          <svg>
+            <use href="./img/symbol-defs.svg#close" width="19"></use>
+          </svg>
+        </button>
+        <ul class="mob-nav__list list">
+          <li><a href="./index.html" class="mob-nav__link link mob-current">Студія</a></li>
+          <li><a href="./portpholio.html" class="mob-nav__link link">Портфоліо</a></li>
+          <li><a href="#" class="mob-nav__link link">Контакти</a></li>
+        </ul>
+        <div>
+          <ul class="list">
+            <li><a href="tel:+38096111111" class="mob-tel link">+38096111111</a></li>
+            <li>
+              <a href="mailto:info@devstudio.com" class="mob-mail link">info@devstudio.com</a>
+            </li>
+          </ul>
+          <ul class="mob-soc__list list">
+            <li><a href="" class="mob-soc link">Instagram</a><span class="line">|</span></li>
+            <li><a href="" class="mob-soc link">Twitter</a><span class="line">|</span></li>
+            <li><a href="" class="mob-soc link">Facebook</a><span class="line">|</span></li>
+            <li><a href="" class="mob-soc link">Linkedin</a><span class="noline">|</span></li>
           </ul>
         </div>
       </div>
@@ -109,7 +140,7 @@
       <section class="jobs">
         <div class="container">
           <h2 class="title-main">Чим ми займаємося</h2>
-          <ul class="list advantage__list">
+          <ul class="list jobs__list">
             <li class="link-caption">
               <img src="./img/1.jpg" width="370" alt="image1" />
               <p class="caption">десктопні додатки</p>
@@ -128,9 +159,24 @@
       <section class="team">
         <div class="container">
           <h2 class="title-main">Наша команда</h2>
-          <ul class="list advantage__list">
+          <ul class="list team__list">
             <li class="team__item">
-              <img src="./img/игорь.jpg" width="270" alt="igor" />
+              <picture>
+                <source
+                  srcset="./img/igor-desk.jpg 1x, ./img/igor-desk-x2.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./img/igor-tab.jpg 1x, ./img/igor-tab-x2.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./img/igor-mob.jpg 1x, ./img/igor-mob-2x.jpg 2x"
+                  media="(max-width: 320px)"
+                />
+                <img src="./img/игорь.jpg" width="450" alt="igor" />
+              </picture>
+
               <div class="person">
                 <h3 class="person__title">Ігор Дем'яненко</h3>
                 <p class="person__text">Produkt Designer</p>
@@ -167,7 +213,22 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./img/ольга.jpg" width="270" alt="olga" />
+              <picture>
+                <source
+                  srcset="./img/olga-desk.jpg 1x, ./img/olga-desk-x2.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./img/olga-tab.jpg 1x, ./img/olga-tab-x2.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./img/olga-mob.jpg 1x, ./img/olga-mob-2x.jpg 2x"
+                  media="(max-width: 320px)"
+                />
+                <img src="./img/ольга.jpg" width="450" alt="olga" />
+              </picture>
+
               <div class="person">
                 <h3 class="person__title">Ольга Рєпіна</h3>
                 <p class="person__text">Frontent Developer</p>
@@ -205,7 +266,22 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./img/микола.jpg" width="270" alt="mykola" />
+              <picture>
+                <source
+                  srcset="./img/mykola-desk.jpg 1x, ./img/mykola-desk-x2.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./img/mykola-tab.jpg 1x, ./img/mykola-tab-x2.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./img/mykola-mob.jpg 1x, ./img/mykola-mob-2x.jpg 2x"
+                  media="(max-width: 320px)"
+                />
+                <img src="./img/микола.jpg" width="450" alt="mykola" />
+              </picture>
+
               <div class="person">
                 <h3 class="person__title">Микола Тарасов</h3>
                 <p class="person__text">Marketing</p>
@@ -243,7 +319,22 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./img/михайло.jpg" width="270" alt="mykhailo" />
+              <picture>
+                <source
+                  srcset="./img/mykhailo-desk.jpg 1x, ./img/mykhailo-desk-x2.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./img/mykhailo-tab.jpg 1x, ./img/mykhailo-tab-x2.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./img/mykhailo-mob.jpg 1x, ./img/mykhailo-mob-2x.jpg 2x"
+                  media="(max-width: 320px)"
+                />
+                <img src="./img/михайло.jpg" width="450" alt="mykhailo" />
+              </picture>
+
               <div class="person">
                 <h3 class="person__title">Михайло Єрмаков</h3>
                 <p class="person__text">UI Designer</p>
@@ -287,7 +378,7 @@
         <div class="container">
           <h2 class="logo-company__title title-main">Постійні клієнти</h2>
           <ul class="list logo-company__list">
-            <li>
+            <li class="logo-company__item">
               <a href="" class="logo-company__link">
                 <svg class="logo-company__svg">
                   <use href="./img/symbol-defs.svg#Logo"></use></svg
@@ -334,35 +425,35 @@
     </main>
     <footer class="footer-position">
       <div class="container foot-box">
-        <div class="">
-          <div class="container-footer-logo">
-            <a href="./index.html" class="logo link"
-              ><span style="color: #2196f3">Web</span><span style="color: #fff">Studio</span></a
-            >
+        <div class="container-foot-adress">
+          <div class="foot-adress-box">
+            <div class="container-footer-logo">
+              <a href="./index.html" class="logo link"
+                ><span style="color: #2196f3">Web</span><span style="color: #fff">Studio</span></a
+              >
+            </div>
+            <address class="footer-address">
+              <ul class="list link">
+                <li class="footer-item">
+                  <a
+                    href="https://goo.gl/maps/vULrWjoXv9jfUNFcA"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    class="link adress foot-contact"
+                    >м. Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+                <li class="footer-item">
+                  <a href="mailto:info@devstudio.com" class="link tel foot-contact"
+                    >info@devstudio.com
+                  </a>
+                </li>
+                <li class="footer-item">
+                  <a href="tel:+38096111111" class="link tel foot-contact">+38096111111</a>
+                </li>
+              </ul>
+            </address>
           </div>
-          <address>
-            <ul class="list link">
-              <li class="footer-item">
-                <a
-                  href="https://goo.gl/maps/vULrWjoXv9jfUNFcA"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  class="link adress foot-contact"
-                  >м. Київ, пр-т Лесі Українки, 26</a
-                >
-              </li>
-              <li class="footer-item">
-                <a href="mailto:info@devstudio.com" class="link tel foot-contact"
-                  >info@devstudio.com
-                </a>
-              </li>
-              <li class="footer-item">
-                <a href="tel:+38096111111" class="link tel foot-contact">+38096111111</a>
-              </li>
-            </ul>
-          </address>
-        </div>
-        <div>
           <div class="social-network-box">
             <h3 class="last-title">приєднуйтесь</h3>
             <ul class="list social-foot__list">
@@ -401,10 +492,11 @@
           <p class="last-title">підпишіться на розсилку</p>
           <form class="mailing-form">
             <input type="email" name="email" class="mailing-input" placeholder="E-mail" />
-            <button type="submit" class="mailing-list-btn">Підписатися</button>
-            <svg class="mailing-icon">
-              <use href="./img/symbol-defs.svg#telegram" width="24" , height="24"></use>
-            </svg>
+            <button type="submit" class="mailing-list-btn">
+              Підписатися<svg class="mailing-icon">
+                <use href="./img/symbol-defs.svg#telegram" width="24" , height="24"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
@@ -457,7 +549,7 @@
           <label class="label">
             <input type="checkbox" class="checkbox" required />
             <span class="icon"></span>
-            Погоджуюся з розсилкою та приймаю
+            <p class="modal-text">Погоджуюся з розсилкою та приймаю</p>
             <a href="#" class="modal-link">Умови договору.</a>
           </label>
           <button type="submit" class="modal-btn">Відправити</button>
@@ -465,5 +557,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

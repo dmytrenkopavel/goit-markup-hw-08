@@ -1,0 +1,54 @@
+.logo-company {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.social-network__svg {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-network__link:hover .social-network__svg, .social-network__link:focus .social-network__svg {
+  fill: #ffffff;
+}
+
+.logo-company__title {
+  margin-bottom: 50px;
+}
+
+.logo-company__list {
+  display: flex;
+  gap: 30px;
+  padding-left: 0;
+}
+
+.logo-company__svg {
+  width: 106px;
+  height: 60px;
+  display: flex;
+  fill: currentColor;
+  transition: fill 250ms linear;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.logo-company-link:hover .logo-company__svg, .logo-company-link:focus .logo-company__svg {
+  fill: #2196f3;
+}
+
+.logo-company__link {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  color: #afb1b8;
+  justify-content: center;
+  align-items: center;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.logo-company__link:hover, .logo-company__link:focus {
+  color: var(--blue-color);
+}/*# sourceMappingURL=logo-company.css.map */
