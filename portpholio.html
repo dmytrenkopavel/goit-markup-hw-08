@@ -13,7 +13,10 @@
     <title>goit-markup-hw</title>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/1.1.0/normalize.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
@@ -26,12 +29,12 @@
           >
           <ul class="list header-list">
             <li><a href="./index.html" class="header-link link hov">Студія</a></li>
-            <li><a href="./portpholio.html" class="current header-link hov">Портфоліо</a></li>
+            <li><a href="./portpholio.html" class="current header-link hov link">Портфоліо</a></li>
             <li><a href="#" class="header-link link hov">Контакти</a></li>
           </ul>
         </nav>
         <div class="header-connect">
-          <ul class="list header-list">
+          <ul class="list header-list tab-list">
             <li>
               <a href="mailto:info@devstudio.com" class="link tel hov"
                 ><svg class="svg-mail">
@@ -47,6 +50,37 @@
                 >+38096111111</a
               >
             </li>
+          </ul>
+        </div>
+        <button type="button" class="menu-open" data-menu-open>
+          <svg>
+            <use href="./img/symbol-defs.svg#menu" width="40"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu is-hidden" data-menu>
+        <button type="button" class="menu-close" data-menu-close>
+          <svg>
+            <use href="./img/symbol-defs.svg#close" width="19"></use>
+          </svg>
+        </button>
+        <ul class="mob-nav__list list">
+          <li><a href="./index.html" class="mob-nav__link link">Студія</a></li>
+          <li><a href="./portpholio.html" class="mob-current mob-nav__link link">Портфоліо</a></li>
+          <li><a href="#" class="mob-nav__link link">Контакти</a></li>
+        </ul>
+        <div>
+          <ul class="list">
+            <li><a href="tel:+38096111111" class="mob-tel link">+38096111111</a></li>
+            <li>
+              <a href="mailto:info@devstudio.com" class="mob-mail link">info@devstudio.com</a>
+            </li>
+          </ul>
+          <ul class="mob-soc__list list">
+            <li><a href="" class="mob-soc link">Instagram</a><span class="line">|</span></li>
+            <li><a href="" class="mob-soc link">Twitter</a><span class="line">|</span></li>
+            <li><a href="" class="mob-soc link">Facebook</a><span class="line">|</span></li>
+            <li><a href="" class="mob-soc link">Linkedin</a><span class="noline">|</span></li>
           </ul>
         </div>
       </div>
@@ -227,37 +261,37 @@
     </main>
     <footer class="footer-position">
       <div class="container foot-box">
-        <div class="">
-          <div class="container-footer-logo">
-            <a href="./index.html" class="logo link"
-              ><span style="color: #2196f3">Web</span><span style="color: #fff">Studio</span></a
-            >
+        <div class="container-foot-adress">
+          <div class="foot-adress-box">
+            <div class="container-footer-logo">
+              <a href="./index.html" class="logo link"
+                ><span style="color: #2196f3">Web</span><span style="color: #fff">Studio</span></a
+              >
+            </div>
+            <address class="footer-address">
+              <ul class="list link">
+                <li class="footer-item">
+                  <a
+                    href="https://goo.gl/maps/vULrWjoXv9jfUNFcA"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    class="link adress foot-contact"
+                    >м. Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+                <li class="footer-item">
+                  <a href="mailto:info@devstudio.com" class="link tel foot-contact"
+                    >info@devstudio.com
+                  </a>
+                </li>
+                <li class="footer-item">
+                  <a href="tel:+38096111111" class="link tel foot-contact">+38096111111</a>
+                </li>
+              </ul>
+            </address>
           </div>
-          <address>
-            <ul class="list link">
-              <li class="footer-item">
-                <a
-                  href="https://goo.gl/maps/vULrWjoXv9jfUNFcA"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  class="link adress foot-contact"
-                  >м. Київ, пр-т Лесі Українки, 26</a
-                >
-              </li>
-              <li class="footer-item">
-                <a href="mailto:info@devstudio.com" class="link tel foot-contact"
-                  >info@devstudio.com
-                </a>
-              </li>
-              <li class="footer-item">
-                <a href="tel:+38096111111" class="link tel foot-contact">+38096111111</a>
-              </li>
-            </ul>
-          </address>
-        </div>
-        <div>
           <div class="social-network-box">
-            <h3 class="last-title">приєднуйтесь</h3>
+            <h3 class="last-title last-connect">приєднуйтесь</h3>
             <ul class="list social-foot__list">
               <li>
                 <a href="" class="social-foot__link">
@@ -291,16 +325,74 @@
           </div>
         </div>
         <div class="mailing-list">
-          <p class="last-title">підпишіться на розсилку</p>
+          <p class="last-title last-sign">підпишіться на розсилку</p>
           <form class="mailing-form">
             <input type="email" name="email" class="mailing-input" placeholder="E-mail" />
-            <button type="submit" class="mailing-list-btn">Підписатися</button>
-            <svg class="mailing-icon">
-              <use href="./img/symbol-defs.svg#telegram" width="24" , height="24"></use>
-            </svg>
+            <button type="submit" class="mailing-list-btn">
+              Підписатися<svg class="mailing-icon">
+                <use href="./img/symbol-defs.svg#telegram" width="24" , height="24"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="close-btn" data-modal-close>
+          <svg class="icon-close">
+            <use href="./img/symbol-defs.svg#close"></use>
+          </svg>
+        </button>
+        <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
+        <form class="modal-box">
+          <label class="input-label"
+            ><p class="modal-name">Ім'я</p>
+            <div class="input-wrap">
+              <input type="text" name="user-name" class="modal-input" required />
+              <svg class="modal-input-icon">
+                <use href="./img/symbol-defs.svg#person-black"></use>
+              </svg>
+            </div>
+          </label>
+          <label class="input-label"
+            ><p class="modal-name">Телефон</p>
+            <div class="input-wrap">
+              <input type="tel" name="user-phone" class="modal-input" required />
+              <svg class="modal-input-icon">
+                <use href="./img/symbol-defs.svg#phone-black"></use>
+              </svg>
+            </div>
+          </label>
+          <label class="input-label"
+            ><p class="modal-name">Пошта</p>
+            <div class="input-wrap">
+              <input type="email" name="user-email" class="modal-input" required />
+              <svg class="modal-input-icon">
+                <use href="./img/symbol-defs.svg#email-black"></use>
+              </svg>
+            </div>
+          </label>
+          <label class="input-label"
+            ><p class="modal-name">Коментар</p>
+            <textarea
+              class="modal-textarea"
+              name="Коментар"
+              id=""
+              placeholder="Введіть текст"
+            ></textarea>
+          </label>
+          <label class="label">
+            <input type="checkbox" class="checkbox" required />
+            <span class="icon"></span>
+            <p class="modal-text">Погоджуюся з розсилкою та приймаю</p>
+            <a href="#" class="modal-link">Умови договору.</a>
+          </label>
+          <button type="submit" class="modal-btn">Відправити</button>
+        </form>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

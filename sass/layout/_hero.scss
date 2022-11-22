@@ -13,14 +13,14 @@
   background-position: center;
   background-size: cover;
   margin: 0 auto;
-  @include retina {
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../img/hero-mob-2x.jpg);
   }
   @media screen and(min-width:768px) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../img/hero-tab.jpg);
-    @include retina {
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../img/hero-tab-2x.jpg);
     }
@@ -28,7 +28,7 @@
   @media screen and(min-width:1200px) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../img/hero.jpg);
-    @include retina {
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../img/hero-2x.jpg);
     }
@@ -89,7 +89,6 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotateX(0);
-  width: 450px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -98,8 +97,16 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   padding: 40px;
   transition-property: transform;
+  @media screen and(min-width:320px) {
+    width: 95%;
+    max-width: 450px;
+    height: 95%;
+    max-height: 610px;
+    overflow: scroll;
+  }
   @media screen and(min-width:768px) {
-    width: 528px;
+    max-width: 528px;
+    overflow: scroll;
   }
 }
 .modal-title {
@@ -249,11 +256,4 @@
 
 .is-hidden .modal {
   transform: translate(-50%, -50%) rotateX(90deg);
-}
-
-.btns-portpholio {
-  display: flex;
-  gap: 8px;
-  justify-content: center;
-  margin-bottom: 50px;
 }

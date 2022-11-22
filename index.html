@@ -11,7 +11,13 @@
       rel="stylesheet"
     />
     <title>goit-markup-hw</title>
-    <link rel="stylesheet" href="https://github.com/sindresorhus/modern-normalize" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
@@ -163,15 +169,15 @@
             <li class="team__item">
               <picture>
                 <source
-                  srcset="./img/igor-desk.jpg 1x, ./img/igor-desk-x2.jpg 2x"
+                  srcset="./img/igor-desk.jpg 1x, ./img/igor-desk-x2.jpg @2x"
                   media="(min-width: 1200px)"
                 />
                 <source
-                  srcset="./img/igor-tab.jpg 1x, ./img/igor-tab-x2.jpg 2x"
+                  srcset="./img/igor-tab.jpg 1x, ./img/igor-tab-x2.jpg @2x"
                   media="(min-width: 768px)"
                 />
                 <source
-                  srcset="./img/igor-mob.jpg 1x, ./img/igor-mob-2x.jpg 2x"
+                  srcset="./img/igor-mob.jpg 1x, ./img/igor-mob-2x.jpg @2x"
                   media="(max-width: 320px)"
                 />
                 <img src="./img/игорь.jpg" width="450" alt="igor" />
@@ -215,15 +221,15 @@
             <li class="team__item">
               <picture>
                 <source
-                  srcset="./img/olga-desk.jpg 1x, ./img/olga-desk-x2.jpg 2x"
+                  srcset="./img/olga-desk.jpg 1x, ./img/olga-desk-x2.jpg @2x"
                   media="(min-width: 1200px)"
                 />
                 <source
-                  srcset="./img/olga-tab.jpg 1x, ./img/olga-tab-x2.jpg 2x"
+                  srcset="./img/olga-tab.jpg 1x, ./img/olga-tab-x2.jpg @2x"
                   media="(min-width: 768px)"
                 />
                 <source
-                  srcset="./img/olga-mob.jpg 1x, ./img/olga-mob-2x.jpg 2x"
+                  srcset="./img/olga-mob.jpg 1x, ./img/olga-mob-2x.jpg @2x"
                   media="(max-width: 320px)"
                 />
                 <img src="./img/ольга.jpg" width="450" alt="olga" />
@@ -268,15 +274,15 @@
             <li class="team__item">
               <picture>
                 <source
-                  srcset="./img/mykola-desk.jpg 1x, ./img/mykola-desk-x2.jpg 2x"
+                  srcset="./img/mykola-desk.jpg 1x, ./img/mykola-desk-x2.jpg @2x"
                   media="(min-width: 1200px)"
                 />
                 <source
-                  srcset="./img/mykola-tab.jpg 1x, ./img/mykola-tab-x2.jpg 2x"
+                  srcset="./img/mykola-tab.jpg 1x, ./img/mykola-tab-x2.jpg @2x"
                   media="(min-width: 768px)"
                 />
                 <source
-                  srcset="./img/mykola-mob.jpg 1x, ./img/mykola-mob-2x.jpg 2x"
+                  srcset="./img/mykola-mob.jpg 1x, ./img/mykola-mob-2x.jpg @2x"
                   media="(max-width: 320px)"
                 />
                 <img src="./img/микола.jpg" width="450" alt="mykola" />
@@ -321,15 +327,15 @@
             <li class="team__item">
               <picture>
                 <source
-                  srcset="./img/mykhailo-desk.jpg 1x, ./img/mykhailo-desk-x2.jpg 2x"
+                  srcset="./img/mykhailo-desk.jpg 1x, ./img/mykhailo-desk-x2.jpg @2x"
                   media="(min-width: 1200px)"
                 />
                 <source
-                  srcset="./img/mykhailo-tab.jpg 1x, ./img/mykhailo-tab-x2.jpg 2x"
+                  srcset="./img/mykhailo-tab.jpg 1x, ./img/mykhailo-tab-x2.jpg @2x"
                   media="(min-width: 768px)"
                 />
                 <source
-                  srcset="./img/mykhailo-mob.jpg 1x, ./img/mykhailo-mob-2x.jpg 2x"
+                  srcset="./img/mykhailo-mob.jpg 1x, ./img/mykhailo-mob-2x.jpg @2x"
                   media="(max-width: 320px)"
                 />
                 <img src="./img/михайло.jpg" width="450" alt="mykhailo" />
@@ -455,7 +461,7 @@
             </address>
           </div>
           <div class="social-network-box">
-            <h3 class="last-title">приєднуйтесь</h3>
+            <h3 class="last-title last-connect">приєднуйтесь</h3>
             <ul class="list social-foot__list">
               <li>
                 <a href="" class="social-foot__link">
@@ -489,7 +495,7 @@
           </div>
         </div>
         <div class="mailing-list">
-          <p class="last-title">підпишіться на розсилку</p>
+          <p class="last-title last-sign">підпишіться на розсилку</p>
           <form class="mailing-form">
             <input type="email" name="email" class="mailing-input" placeholder="E-mail" />
             <button type="submit" class="mailing-list-btn">

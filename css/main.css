@@ -212,8 +212,8 @@ img {
 
 .title-main {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.1785714286;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-color);
@@ -222,12 +222,20 @@ img {
 @media screen and (min-width: 1200px) {
   .title-main {
     margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
   }
 }
 
 .advantage {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .advantage {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .advantage__list {
@@ -293,10 +301,10 @@ img {
   text-transform: uppercase;
   color: var(--title-color);
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .advantage__title {
     display: flex;
-    width: 450px;
+    max-width: 450px;
     justify-content: center;
   }
 }
@@ -337,8 +345,14 @@ img {
 
 .team {
   background-color: #f5f4fa;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .team__item {
@@ -347,7 +361,7 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .team__item {
     margin-bottom: 30px;
   }
@@ -435,8 +449,8 @@ img {
 }
 
 .logo-company {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   margin: 0 auto;
 }
 @media screen and (min-width: 480px) {
@@ -451,6 +465,8 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .logo-company {
+    padding-top: 94px;
+    padding-bottom: 94px;
     width: 1200px;
   }
 }
@@ -538,16 +554,6 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
   margin: 0 auto;
-}
-@media screen and (min-width: 480px) {
-  .footer-position {
-    max-width: 480px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .footer-position {
-    max-width: 768px;
-  }
 }
 @media screen and (min-width: 1200px) {
   .footer-position {
@@ -703,6 +709,18 @@ img {
   .last-title {
     display: flex;
     justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .last-connect {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .last-sign {
+    margin-top: 0;
   }
 }
 
@@ -1138,7 +1156,6 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotateX(0);
-  width: 450px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -1147,9 +1164,19 @@ img {
   padding: 40px;
   transition-property: transform;
 }
+@media screen and (min-width: 320px) {
+  .modal {
+    width: 95%;
+    max-width: 450px;
+    height: 95%;
+    max-height: 610px;
+    overflow: scroll;
+  }
+}
 @media screen and (min-width: 768px) {
   .modal {
-    width: 528px;
+    max-width: 528px;
+    overflow: scroll;
   }
 }
 
@@ -1324,13 +1351,6 @@ img {
   transform: translate(-50%, -50%) rotateX(90deg);
 }
 
-.btns-portpholio {
-  display: flex;
-  gap: 8px;
-  justify-content: center;
-  margin-bottom: 50px;
-}
-
 .jobs {
   padding-bottom: 94px;
 }
@@ -1367,8 +1387,27 @@ img {
 }
 
 .main-sect {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .main-sect {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.btns-portpholio {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .btns-portpholio {
+    justify-content: center;
+    margin-bottom: 50px;
+  }
 }
 
 .portpholio-list {
@@ -1388,9 +1427,25 @@ img {
 }
 
 .portpholio-item {
-  flex-basis: calc(33.3333333333% - 30px);
   margin-left: 30px;
   margin-top: 30px;
+}
+@media screen and (min-width: 320px) {
+  .portpholio-item {
+    flex-basis: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .portpholio-item {
+    flex-basis: calc(50% - 30px);
+    height: 440px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portpholio-item {
+    flex-basis: calc(33.3333333333% - 30px);
+    height: 440px;
+  }
 }
 
 .card-bcg {
