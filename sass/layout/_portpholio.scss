@@ -25,11 +25,14 @@
 
 .portfolio-title {
   font-weight: 700;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-color);
   margin-bottom: 4px;
+  @media screen and(min-width:1200px) {
+    font-size: 18px;
+  }
 }
 .portpholio-item {
   margin-left: 30px;
