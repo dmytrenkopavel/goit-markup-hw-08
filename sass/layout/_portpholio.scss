@@ -42,11 +42,9 @@
   }
   @media screen and(min-width:768px) {
     flex-basis: calc(100% / 2 - 30px);
-    height: 440px;
   }
   @media screen and(min-width:1200px) {
     flex-basis: calc(100% / 3 - 30px);
-    height: 440px;
   }
 }
 .card-bcg {
@@ -56,10 +54,6 @@
 
 .thumb-portpholio {
   position: relative;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
   overflow: hidden;
 }
 .thumb-text {

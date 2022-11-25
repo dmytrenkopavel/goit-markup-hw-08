@@ -379,12 +379,6 @@ img {
   }
 }
 
-@media screen and (min-width: 480px) {
-  .team__item:last-child {
-    margin-bottom: 0;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .team__list {
     display: flex;
@@ -397,6 +391,12 @@ img {
   .team__list {
     width: 100%;
     flex-wrap: nowrap;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .team__item:last-child {
+    margin-bottom: 0;
   }
 }
 
@@ -553,12 +553,6 @@ img {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
-  margin: 0 auto;
-}
-@media screen and (min-width: 1200px) {
-  .footer-position {
-    max-width: 1600px;
-  }
 }
 
 .foot-contact {
@@ -683,11 +677,14 @@ img {
 }
 
 .social-network-box {
-  margin: 0 auto;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (min-width: 768px) {
   .social-network-box {
     width: 206px;
+    margin-top: 0;
     margin-left: 0;
     margin-right: 0;
   }
@@ -701,7 +698,6 @@ img {
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
-  margin-top: 60px;
   display: flex;
   justify-content: center;
 }
@@ -726,11 +722,18 @@ img {
 
 .mailing-list {
   width: 100%;
+  margin-top: 60px;
+}
+@media screen and (min-width: 768px) {
+  .mailing-list {
+    margin-top: 60px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .mailing-list {
     width: 570px;
     margin-left: 93px;
+    margin-top: 0;
   }
 }
 
@@ -1056,6 +1059,7 @@ img {
   padding-top: 118px;
   padding-bottom: 118px;
   text-align: center;
+  max-width: 1600px;
   height: 100%;
 }
 
@@ -1164,7 +1168,7 @@ img {
   padding: 40px;
   transition-property: transform;
 }
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 1199px) {
   .modal {
     width: 95%;
     max-width: 450px;
@@ -1176,7 +1180,6 @@ img {
 @media screen and (min-width: 768px) {
   .modal {
     max-width: 528px;
-    overflow: scroll;
   }
 }
 
@@ -1443,13 +1446,11 @@ img {
 @media screen and (min-width: 768px) {
   .portpholio-item {
     flex-basis: calc(50% - 30px);
-    height: 440px;
   }
 }
 @media screen and (min-width: 1200px) {
   .portpholio-item {
     flex-basis: calc(33.3333333333% - 30px);
-    height: 440px;
   }
 }
 
@@ -1460,10 +1461,6 @@ img {
 
 .thumb-portpholio {
   position: relative;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
   overflow: hidden;
 }
 

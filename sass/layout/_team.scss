@@ -27,11 +27,6 @@
   }
 }
 
-.team__item:last-child {
-  @media screen and(min-width:480px) {
-    margin-bottom: 0;
-  }
-}
 .team__list {
   @media screen and(min-width:768px) {
     display: flex;
@@ -42,6 +37,11 @@
   @media screen and(min-width:1200px) {
     width: 100%;
     flex-wrap: nowrap;
+  }
+}
+.team__item:last-child {
+  @media screen and(min-width:320px) {
+    margin-bottom: 0;
   }
 }
 .person {

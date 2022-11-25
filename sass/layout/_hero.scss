@@ -2,6 +2,7 @@
   padding-top: 118px;
   padding-bottom: 118px;
   text-align: center;
+  max-width: 1600px;
   height: 100%;
 }
 
@@ -97,7 +98,7 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   padding: 40px;
   transition-property: transform;
-  @media screen and(min-width:320px) {
+  @media screen and(max-width:1199px) {
     width: 95%;
     max-width: 450px;
     height: 95%;
@@ -106,7 +107,6 @@
   }
   @media screen and(min-width:768px) {
     max-width: 528px;
-    overflow: scroll;
   }
 }
 .modal-title {

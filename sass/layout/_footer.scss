@@ -2,11 +2,6 @@
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
-  margin: 0 auto;
-
-  @media screen and(min-width:1200px) {
-    max-width: 1600px;
-  }
 }
 
 .foot-contact {
@@ -116,9 +111,12 @@
 }
 
 .social-network-box {
-  margin: 0 auto;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
   @media screen and(min-width:768px) {
     width: 206px;
+    margin-top: 0;
     margin-left: 0;
     margin-right: 0;
   }
@@ -132,7 +130,6 @@
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
-  margin-top: 60px;
   display: flex;
   justify-content: center;
   @media screen and(min-width:1200px) {
@@ -152,9 +149,14 @@
 }
 .mailing-list {
   width: 100%;
+  margin-top: 60px;
+  @media screen and(min-width:768px) {
+    margin-top: 60px;
+  }
   @media screen and(min-width:1200px) {
     width: 570px;
     margin-left: 93px;
+    margin-top: 0;
   }
 }
 .mailing-list > form {
